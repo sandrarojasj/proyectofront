@@ -1,4 +1,5 @@
 <template>
+
     <footer>
     <center>
     <a><img id="facebook" src="../imagenes/facebook.png" width="50" height="50"> </a>
@@ -31,7 +32,7 @@
 
 footer{
     margin-top: -100px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
     background: linear-gradient(to right, rgb(088, 197, 202), white);
 height: 400px;
 }

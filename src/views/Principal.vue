@@ -9,8 +9,7 @@
       <img id="medicacion" src="../imagenes/mejor.jpg" alt="mejor">
       <button class="botones-inicio" @click="irapaginavacunacion()">Vacunación</button>
       <button class="botones-pedircita" @click="irapaginapedircita()">Pedir Cita</button>
-      <button class="botones-informacion" onclick="window.location.href='../html/Formulas.html'">
- Información</button>
+      <button class="botones-informacion" @click="irapaginainformacion()"> Información</button>
       </div>
     </section>
 </template>
@@ -23,19 +22,15 @@ export default {
     methods:{
         irapaginavacunacion(){
             this.$router.push('/vacunacion')
-        } 
+        },
+        irapaginapedircita(){
+          this.$router.push('/pedircita')
+        },
+        irapaginainformacion(){
+          this.$router.push('/informacion')
+        }
     }
 }    
-export default {
-    data() {
-        
-    },
-    methods:{
-        irapaginapedircita(){
-            this.$router.push('/pedircita')
-        } 
-    }
-}
 </script>
 <style>
 

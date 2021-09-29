@@ -24,14 +24,27 @@ const routes = [
   
     component: () => import(/* webpackChunkName: "about" */ '../views/Principal.vue')
   },
+  {
+    path: '/formulario1',
+    name: 'Formulario1',
+  
+    component: () => import(/* webpackChunkName: "about" */ '../components/Formulario1.vue')
+  },
 
   {
-    path: '/formulario_vacunados',
-    name: 'Formulario_vacunados',
+    path: '/pedircita',
+    name: 'Pedircita',
   
-    component: () => import(/* webpackChunkName: "about" */ '../views/Formulario_vacunados.vue')
-  }
+    component: () => import(/* webpackChunkName: "about" */ '../views/Pedircita.vue')
+  },
 
+  {
+    path: '/informacion',
+    name: 'Informacion',
+  
+    component: () => import(/* webpackChunkName: "about" */ '../views/Informacion.vue')
+  },
+  
 ]
 
 const router = new VueRouter({
