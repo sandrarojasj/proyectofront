@@ -1,6 +1,5 @@
 <template>
-
-    <footer>
+<footer>
     <center>
     <a><img id="facebook" src="../imagenes/facebook.png" width="50" height="50"> </a>
     <a><img id="twiter" src="../imagenes/twiter.png"> </a>
@@ -15,9 +14,8 @@
   <p><a href="gcm@colombia.com"> Email: gcm@colombia.com</a></p>
   </center>
 </footer>
-
-
 </template>
+
 
 <style>
 
@@ -31,9 +29,9 @@
 }
 
 footer{
-    margin-top: -100px;
+  
   margin-bottom: 20px;
     background: linear-gradient(to right, rgb(088, 197, 202), white);
-height: 400px;
+height: 300px;
 }
 </style>

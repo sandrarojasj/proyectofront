@@ -3,16 +3,18 @@
 <div id="header">
 <nav class= "navbar-collapse" id="navbarColor">
   
-      <ul class="nav" >
+      <ul class="nav" style="padding-right: 700px;">
           <li>
             <img id="logo" src="../imagenes/logo1.png" >
 
           </li>
           <li class="nav-item">
-            <a href="/principal">Home</a>
+            <a href="/principal">Inicio</a>
           </li>
-          
           <li class="nav-item">
+            <a href="#">Noticias</a>
+          </li>
+          <li class="nav-item" @click="irapaginapreguntasfrecuentes()">
             <a href="#">Preguntas Frecuentes</a>
           </li>
             <li class="nav-item">
@@ -21,13 +23,16 @@
             </li>
           <li>
 
-        <form class="d-flex">
+        <form class="d-flex" style= "position: relative; left: 373px;">
   
           <input style="background-color: rgb(196,237,237);" class="btn" type="search"  placeholder="Search" aria-label="Search">
           <button style="background-color: rgb(187,247,235);" class="btn" type="submit">Buscar</button>
         </form>
           </li>
-          <li><img id="usuario" src="../imagenes/Sin-perfil.jpg" alt="user"> 
+          <li><img id="usuario" src="../imagenes/Sin-perfil.jpg" alt="user"  style="
+    left: 500px;
+    position: relative;
+"> 
           </li>
       </ul>
       </nav>
@@ -41,13 +46,18 @@ export default {
 
   },
   methods:{
-    
+  
+        irapaginapreguntasfrecuentes(){
+            this.$router.push('/preguntasfrecuentes')
+        }, 
 
   }
 }
 </script>
 
+
 <style>
+
 
 ul  {
   text-align: center;

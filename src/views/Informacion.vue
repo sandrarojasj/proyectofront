@@ -1,8 +1,4 @@
 <template>
-<div class="colorfondo">
-<v-app> 
-  <v-container>
-
     <center>
     <img width="350px;"  src='../imagenes/info.jpg' height="200px"> 
    <div id="contenedor"> 
@@ -27,10 +23,7 @@
     <button class="boton">Agende su cita</button> 
     <br> 
    </div>
-    </center>
-  </v-container>
-</v-app>
- </div>   
+    </center>  
 </template>
 
 <style>
@@ -59,13 +52,6 @@
   height: 90px;
 }
 
-.colorfondo {
-  background: linear-gradient(to right, rgb(088, 197, 202), white);
-  background-size: cover ;
-  background-repeat: no-repeat;
-  background-color: hsl(220, 10%, 77%)
-}
-
 #centro{                           
   height: 1150px;
   width: 700px;
@@ -82,12 +68,6 @@
   width: 1000px;
   margin: 0 auto;
     } 
-.colorfondo {
-  background: linear-gradient(to right, rgb(088, 197, 202), white);
-  background-size: cover ;
-  background-repeat: no-repeat;
-  background-color: hsl(220, 10%, 77%)
-}
 
 #Titulo{
   margin-top:200px;

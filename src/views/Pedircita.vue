@@ -1,7 +1,4 @@
 <template>
-<div class="colorfondo">
-<v-app> 
-  <v-container>
     <center>
       <br>
     <img width="250px; "  src='../imagenes/micita.png' height="150px;"> 
@@ -10,17 +7,13 @@
     <div id="centro"> 
         <estilo>
        
-        
-gjgvhjghkhjkjhkjkl
+      AQUI VAN LOS FORMULARIOS
       </estilo>   
   </div>
   <br>
   <br> 
    </div>
-    </center>
-  </v-container>
-</v-app>
- </div>   
+    </center> 
 </template>
 
 

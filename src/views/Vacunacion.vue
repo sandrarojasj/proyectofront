@@ -1,8 +1,4 @@
 <template>
-<div class="colorfondo">
-<v-app> 
-  <v-container>
-
     <center>
     <img width="500px;"  src='../imagenes/inicio.png'> 
    <div id="contenedor"> 
@@ -25,11 +21,7 @@ Lo invitamos a cuidarse, vacúnese, salve su vida y la de su familia. </p>
   
     <button class="boton">Agende su cita</button>  
    </div>
-    </center>
-  </v-container>
-  
-</v-app>
- </div>   
+    </center>  
 </template>
 
 <style>
@@ -55,15 +47,6 @@ Lo invitamos a cuidarse, vacúnese, salve su vida y la de su familia. </p>
   border-radius: 10px;
   width: 190px;
   height: 90px;
-}
-
-.colorfondo {
-  background: linear-gradient(to right, rgb(088, 197, 202), white);
-  background-size: cover ;
-  background-repeat: no-repeat;
-  background-color: hsl(220, 10%, 77%)
-
-
 }
 
 

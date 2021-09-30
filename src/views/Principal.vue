@@ -35,15 +35,11 @@ export default {
 <style>
 
 section{
+  position: absolute;
 
    width: 100%; 
-    margin: 0 auto;
-    height: 100vh;
-  background: linear-gradient(to right, rgb(088, 197, 202), white);
-  background-size: cover ;
-  background-repeat: no-repeat;
-  background-color: hsl(220, 10%, 77%);
-  
+  margin: -160px auto;
+
 }
 
 #centro{                           
