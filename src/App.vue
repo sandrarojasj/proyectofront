@@ -30,7 +30,7 @@
 
 import Barra from './components/Barra.vue'
 import Footer from './components/Footer.vue'
-import Formulario1 from './components/Formulario1.vue'
+
 
 export default {
   name: 'App',
@@ -81,13 +81,6 @@ export default {
   height:25% ;
   
 }
-
-
-
-
-
-
-
 
 
 </style>

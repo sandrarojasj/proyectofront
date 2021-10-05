@@ -10,7 +10,7 @@
 Lo invitamos a cuidarse, vacúnese, salve su vida y la de su familia. </p>
  </i>
 
-        <img src= "../imagenes/etapas.png" width="450" height="200">
+        <img src= "../imagenes/etapas.png" width="400" height="200">
 
       </estilo>   
   </div>
@@ -18,11 +18,40 @@ Lo invitamos a cuidarse, vacúnese, salve su vida y la de su familia. </p>
   <br>
     <img id="vacunarse" src="../imagenes/vacunarse.png">
     <br>
-  
-    <button class="boton">Agende su cita</button>  
+    <br>
+    
+    <div class="mb-6 row">
+    <center>
+    <div class="col-md-4">
+      
+      <button class="btn btn-primary form-control " @click="irapedircita()">Agende su cita</button>
+    
+    </div>
+    </center>
+  </div>
    </div>
     </center>  
 </template>
+
+<script>
+
+export default {
+  name: 'Vacunacion',
+  
+
+  data (){
+  
+  },
+
+  methods:{
+        irapedircita(){
+            this.$router.push('/pedircita')
+        }
+  }
+}
+
+</script>
+
 
 <style>
 
@@ -45,8 +74,8 @@ Lo invitamos a cuidarse, vacúnese, salve su vida y la de su familia. </p>
   margin-top: 10px;
   margin-left: 20px;
   border-radius: 10px;
-  width: 190px;
-  height: 90px;
+  width: 280px;
+  height: 120px;
 }
 
 

@@ -24,12 +24,6 @@ const routes = [
   
     component: () => import(/* webpackChunkName: "about" */ '../views/Principal.vue')
   },
-  {
-    path: '/formulario1',
-    name: 'Formulario1',
-  
-    component: () => import(/* webpackChunkName: "about" */ '../components/Formulario1.vue')
-  },
 
   {
     path: '/pedircita',
@@ -50,7 +44,19 @@ const routes = [
   
     component: () => import(/* webpackChunkName: "about" */ '../views/Preguntasfrecuentes.vue')
   },
+  {
+    path: '/formulario',
+    name: 'Formulario2',
   
+    component: () => import(/* webpackChunkName: "about" */ '../views/Formulario2.vue')
+  },
+  
+  {
+    path: '/diacita',
+    name: 'Diacita',
+  
+    component: () => import(/* webpackChunkName: "about" */ '../views/Diacita.vue')
+  },
 ]
 
 const router = new VueRouter({
