@@ -508,7 +508,7 @@ export default {
 <style>
 #centro{ 
                           
-  height: 3000px;
+  height: 3400px;
   width:1500px;
   margin: 0 auto;
   border-radius: 20px;

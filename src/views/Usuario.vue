@@ -17,10 +17,11 @@
             v-on="on"
           >
             <v-avatar
-              color="brown"
-              size="48"
+              color="green
+              "
+              size="50"
             >
-              <span class="white--text text-h5">{{ user.initials }}</span>
+              <span class="white--text text-h6">{{ user.initials }}</span>
             </v-avatar>
           </v-btn>
         </template>
@@ -28,11 +29,11 @@
           <v-list-item-content class="justify-center">
             <div class="mx-auto text-center">
               <v-avatar
-                color="brown"
+                color="green"
               >
                 <span class="white--text text-h5">{{ user.initials }}</span>
               </v-avatar>
-              <h3>{{ user.fullName }}</h3>
+              <h5>{{ user.fullName }}</h5>
               <p class="text-caption mt-1">
                 {{ user.email }}
               </p>
@@ -42,7 +43,7 @@
                 rounded
                 text
               >
-                Edit Account
+                Editar Perfil
               </v-btn>
               <v-divider class="my-3"></v-divider>
               <v-btn
@@ -50,7 +51,7 @@
                 rounded
                 text
               >
-                Disconnect
+                Cerrar sesión
               </v-btn>
             </div>
           </v-list-item-content>
@@ -64,13 +65,24 @@
   export default {
     data: () => ({
       user: {
-        initials: 'JD',
-        fullName: 'John Doe',
-        email: 'john.doe@doe.com',
+        initials: 'UJ',
+        fullName: 'Usuario Jaramillo ',
+        email: 'usuario.jaramillo@hotmail.com',
       },
-    }),
+
+  name: 'usuario',
+  
+  methods:{
+        iraprincipal(){
+         window.location.href="/principal"
+        },
   }
+})
+}
+
+
 </script>
+
 
 <style>
 

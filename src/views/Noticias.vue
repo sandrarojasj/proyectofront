@@ -5,12 +5,11 @@
     <br><br><br>
    <div id="contenedor"> 
     <div id="centro"> 
+<br>
+<br>
+<h1><p>&nbsp;&nbsp;Noticias<br><br> </p> </h1>
 
-<p>&nbsp;&nbsp;Noticias<br><br>
 
-
-
-<br>Recuerde diligenciar correctamente sus datos.</p><br>
 
 
       

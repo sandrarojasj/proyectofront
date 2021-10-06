@@ -1,11 +1,16 @@
 <template>
 <center>
+      <br>
+    <img width="390px; "  src='../imagenes/pf.jpg' height="200px;"> 
+    <br><br><br>
+
+<center>
 <div id="contenedor"> 
     <div id="centro"> 
         <estilo>
            <br>
         <h4>
-        <p style= "color:black;" size="px"> <h4> Preguntas frecuentes acerca de la vacuna contra el Covid-19</h4> <br><br></p></h4> 
+        <p style= "color:black;" size="px"> <h4> Preguntas frecuentes acerca de la vacuna contra el Covid-19</h4> <br><br></h4> 
       </estilo>
 
   <v-expansion-panels focusable>
@@ -168,6 +173,7 @@ El TTS es una afección grave que genera coágulos sanguíneos con conteo de pla
    </div>
 
   </center>
+</center>
 </template>
 
 

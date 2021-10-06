@@ -122,8 +122,9 @@
     }),
      methods:{
   
-        iraperfil(){
-            alert("Configurar perfil")
+        irausuario(){
+            alert("Configurar usuario")
         }, 
+  }
   }
 </script>

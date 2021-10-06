@@ -64,7 +64,27 @@ const routes = [
   
     component: () => import(/* webpackChunkName: "about" */ '../views/Noticias.vue')
   },
+  {
+    path: '/formularioregistro',
+    name: 'Formularioregistro',
+  
+    component: () => import(/* webpackChunkName: "about" */ '../views/Formularioregistro.vue')
+  },
+  {
+    path: '/usuario',
+    name: 'Usuario',
+  
+    component: () => import(/* webpackChunkName: "about" */ '../views/Usuario.vue')
+  },
+  {
+    path: '/login',
+    name: 'Login',
+  
+    component: () => import(/* webpackChunkName: "about" */ '../views/Login.vue')
+  },
+ 
 ]
+
 
 const router = new VueRouter({
   mode: 'history',

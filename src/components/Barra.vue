@@ -28,7 +28,9 @@
           <button style="background-color: rgb(187,247,235);" class="btn" type="submit">Buscar</button>
         </form>
           </li>
-          <li><img @click="irapaginaconfigurarperfil()" id="usuario" src="../imagenes/Sin-perfil.jpg" alt="user"  style="
+
+        <li>
+          <img @click="irapaginausuario()" id="usuario" src="../imagenes/Sin-perfil.jpg" alt="user"  style="
     left: 500px;
     position: relative;
     cursor: pointer;
@@ -47,7 +49,7 @@ export default {
   },
   methods:{
   
-        irapaginaconfigurarperfil(){
+        irapaginausuario(){
             alert("Configirar perfil")
         }, 
 

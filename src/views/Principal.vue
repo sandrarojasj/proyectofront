@@ -1,6 +1,7 @@
 <template>
     
     <section class= "">
+
         <h1 id="GCM" >Gestor de Citas. </h1 >
       <div id="centro"> 
         
@@ -12,10 +13,9 @@
       <button class="botones-informacion" @click="irapaginainformacion()"> Información</button>
       </div>
 
-
-  
-
 </section>
+
+
 </template>
 
 <script>
@@ -36,9 +36,13 @@ export default {
         irapaginausuario(){
           this.$router.push('/usuario')
         },
+        irapaginaprincipal(){
+          this.$alert('/principal')
+          }
     }
-}    
+} 
 </script>
+
 <style>
 
 section{
@@ -169,6 +173,4 @@ li a:hover {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
-
-
 </style>
