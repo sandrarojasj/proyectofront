@@ -20,3 +20,12 @@
 
 
 </template>
+
+
+<style>
+#contenedor{
+  height: 1000px;
+  width: 1000px;
+  margin: 0 auto;
+    } 
+</style>

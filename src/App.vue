@@ -36,8 +36,10 @@ export default {
   name: 'App',
   components:{
     Barra,
-   
+    
     Footer,
+
+
 
 
   },
@@ -45,6 +47,7 @@ export default {
   data: () => ({
     //
   }),
+
 };
 </script>
 

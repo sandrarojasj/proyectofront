@@ -1,9 +1,9 @@
 <template>
     <center>
       <br>
-    <img width="250px; "  src='../imagenes/micita.png' height="150px;"> 
+    <img width="200px; "  src='../imagenes/micita.png' height="150px;"> 
     <br><br><br>
-   <div id="contenedor"> 
+   <div id="contenedor" class="flex-container"> 
     <div id="centro"> 
 
 <p>&nbsp;&nbsp;Este sitio cuenta con la facilidad de programar citas para la inmunización en contra del Covid-19.
@@ -173,7 +173,7 @@ export default {
 
 <style>
 #centro{                           
-  height: 1500px;
+  height: 1800px;
   width: 700px;
   margin: 0 auto;
   border-radius: 20px;
@@ -188,7 +188,26 @@ height: 12px;
 
 }
 
+#contenedor{
+  height: 1000px;
+  width: 1000px;
+  margin: 0 auto;
+    } 
 
+h1 {
+  margin-bottom: 20px;
+}
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 30px;
+  display: box;
+  height: 200px;
+  
+  justify-content: center;
+  padding: 50px;
+  font-size: 18px;
+} 
+ 
 
 
 </style>

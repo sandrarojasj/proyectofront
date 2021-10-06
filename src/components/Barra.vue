@@ -11,16 +11,15 @@
           <li class="nav-item">
             <a href="/principal">Inicio</a>
           </li>
+
           <li class="nav-item">
-            <a href="#">Noticias</a>
+            <a href="/noticias">Noticias</a>
           </li>
-          <li class="nav-item" @click="irapaginapreguntasfrecuentes()">
-            <a href="#">Preguntas Frecuentes</a>
+          
+          <li class="nav-item">
+            <a href="/preguntasfrecuentes">Preguntas Frecuentes</a>
           </li>
-            <li class="nav-item">
-            <a class="nav-link" >Configurar perfil</a>
             
-            </li>
           <li>
 
         <form class="d-flex" style= "position: relative; left: 373px;">
@@ -29,9 +28,10 @@
           <button style="background-color: rgb(187,247,235);" class="btn" type="submit">Buscar</button>
         </form>
           </li>
-          <li><img id="usuario" src="../imagenes/Sin-perfil.jpg" alt="user"  style="
+          <li><img @click="irapaginaconfigurarperfil()" id="usuario" src="../imagenes/Sin-perfil.jpg" alt="user"  style="
     left: 500px;
     position: relative;
+    cursor: pointer;
 "> 
           </li>
       </ul>
@@ -47,8 +47,8 @@ export default {
   },
   methods:{
   
-        irapaginapreguntasfrecuentes(){
-            this.$router.push('/preguntasfrecuentes')
+        irapaginaconfigurarperfil(){
+            alert("Configirar perfil")
         }, 
 
   }

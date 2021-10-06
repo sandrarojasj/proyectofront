@@ -1,18 +1,26 @@
 <template>
     <center>
     <img width="500px;"  src='../imagenes/inicio.png'> 
-   <div id="contenedor"> 
+    
+   
+   <div id="contenedor" class= "flex-container"> 
     <div id="centro"> 
+      <div class="mb-6 row">
+      
         <estilo>
-        
+        <br>
+        <br>
         <i>
-        <p style= "color:LightGray;"> “Vacuna preventiva contra el COVID"<br>
-Lo invitamos a cuidarse, vacúnese, salve su vida y la de su familia. </p>
- </i>
+       <h5><p style= "color:black;"> “Vacuna preventiva contra el COVID"<br>
+Lo invitamos a cuidarse, vacúnese, salve su vida y la de su familia.</p></h5>
+</i>
+<br>
+<br>
 
-        <img src= "../imagenes/etapas.png" width="400" height="200">
+        <img src= "../imagenes/etapas.png" width="700 px" height="300px">
 
       </estilo>   
+  </div>
   </div>
   <br>
   <br>
@@ -25,8 +33,9 @@ Lo invitamos a cuidarse, vacúnese, salve su vida y la de su familia. </p>
     <div class="col-md-4">
       
       <button class="btn btn-primary form-control " @click="irapedircita()">Agende su cita</button>
-    
+     
     </div>
+    
     </center>
   </div>
    </div>
@@ -38,22 +47,32 @@ Lo invitamos a cuidarse, vacúnese, salve su vida y la de su familia. </p>
 export default {
   name: 'Vacunacion',
   
-
   data (){
   
   },
 
   methods:{
         irapedircita(){
-            this.$router.push('/pedircita')
+         window.location.href="/pedircita"
         }
   }
 }
 
 </script>
 
-
 <style>
+
+#centro{ 
+                          
+  height: 600px;
+  width:750px;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 5px solid;
+  background-color: whitesmoke;
+  top: 30px;
+  position: relative;
+    } 
 
 #botones-regreso{
   text-align: center;
@@ -68,6 +87,7 @@ export default {
 
 .p {
   font-family: "Fantasy";
+  
 }
 
 #vacunarse  {
@@ -77,6 +97,10 @@ export default {
   width: 280px;
   height: 120px;
 }
-
+#contenedor{
+  height: 1000px;
+  width: 1000px;
+  margin: 0 auto;
+    } 
 
 </style>

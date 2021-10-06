@@ -1,5 +1,5 @@
 <template>
-
+    
     <section class= "">
         <h1 id="GCM" >Gestor de Citas. </h1 >
       <div id="centro"> 
@@ -11,7 +11,11 @@
       <button class="botones-pedircita" @click="irapaginapedircita()">Pedir Cita</button>
       <button class="botones-informacion" @click="irapaginainformacion()"> Información</button>
       </div>
-    </section>
+
+
+  
+
+</section>
 </template>
 
 <script>
@@ -28,7 +32,10 @@ export default {
         },
         irapaginainformacion(){
           this.$router.push('/informacion')
-        }
+        },
+        irapaginausuario(){
+          this.$router.push('/usuario')
+        },
     }
 }    
 </script>
@@ -102,6 +109,7 @@ li a {
 #usuario{
   height: 65px;
   width: 65px;
+  position: left;
 
 }
 

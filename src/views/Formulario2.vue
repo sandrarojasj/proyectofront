@@ -1,30 +1,27 @@
 <template>
 
-<div id="contenedor" class="flex-container">
-  <v-form> 
-  <div id="centro">  
-
-<v-form class="mt-5">
+  <div id="contenedor" class= "flex-container">
+    <div id="centro"> 
+      <v-form>
         <div class="mb-6 row">
    
     <br> <br> <br> <br>    
 
-    <n><h2> <center>Formulario 2</center></h2></n>
+    <n><h1> <center>Formulario 2</center></h1></n>
 
     <h6>&nbsp; Se requiere diligenciar la siguiente información, para completar el registro de su cita de vacunación.  </h6>
     <br> <br><br>
 
-   
-
-    <p> <b>  &nbsp;&nbsp; 1.</b> ¿Ha experimentado cualquiera de los siguiente síntomas de COVID-19, dentro de las últimas 48 horas? </p>
-    <div class="col-sm-6">
+        </div>
+         <p> <b>  &nbsp;&nbsp; 1.</b> ¿Ha experimentado cualquiera de los siguiente síntomas de COVID-19, dentro de las últimas 48 horas? </p>
+         <div class="col-sm- ms-4">
       
 <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
 <label for="vehicle1"> Fiebre o escalofrío. </label><br>
 <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
 <label for="vehicle2"> Tos.  </label><br>
 <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-<label for="vehicle3"> Falta de aire o dificultad de respirar. </label><br>
+<label for="vehicle3"> Falta de aire o dificultad de respirar.</label><br>
 <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
 <label for="vehicle3"> Fátiga. </label><br>
 <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
@@ -41,12 +38,11 @@
 <label for="vehicle3"> Vomito/diarrea. </label><br>
 <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
 <label for="vehicle3"> Ninguna de las anteriores.</label><br>
-
     </div>
-  </div>
+    <br>
+    <br>
 
-
-  <div class="mb-6 row">
+    <div class="mb-6 row">
     <p> <b>  &nbsp;&nbsp; 2.</b> ¿Ha dado positive en la prueba de COVID-19 en los últimos 10 días? </p> 
   
     <div class="col-sm-4">   
@@ -60,12 +56,9 @@
       
     ></v-overflow-btn>
   </v-container>
-   
-  
     </div>
   </div>
-
-
+  <br>
   <div class="mb-6 row">
    <p> <b>  &nbsp;&nbsp; 3.</b>  ¿Se encuentra actualmente en la espera de los resultados de la prueba de COVID-19?</p> 
     
@@ -84,8 +77,7 @@
   
     </div>
   </div>
-
-
+  <br>
   <div class="mb-6 row">
     <p> <b>  &nbsp;&nbsp; 4.</b>¿Se le ha dicho que se sospecha que usted tiene COVID-19 en los últimos 10 días?</p> 
    
@@ -105,9 +97,8 @@
     </div>
   </div>
 
-
-
-<div class="mb-6 row">
+  <br>
+  <div class="mb-6 row">
     <p> <b>  &nbsp;&nbsp; 5.</b>¿Tiene 65 años de edad o más?</p> 
     
     <div class="col-sm-4">
@@ -126,11 +117,13 @@
     </div>
   </div>
 
+<br>
+ 
+<div class="mb-4 row">
 
-
-<div class="mb-6 row">
     <p> <b>  &nbsp;&nbsp; 6.</b> Marque si tiene alguna de las siguientes condiciones de salud:</p>
-  <div class="col-sm-6">
+  
+  <div class="col-sm- ms-4">
       
 <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
 <label for="vehicle1"> Asma/enfermedad pulmonar crónica. </label><br>
@@ -150,13 +143,21 @@ transplante de órganos o en medicamentos que inhiben el sistema inmunitario).</
 <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
 <label for="vehicle3"> Ninguno/ Desconocido. </label><br>
 <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-<label for="vehicle3"> otro? Especifique cual? </label><br>
+<label for="vehicle3"> otro?  </label><br>
+
+<div class="mb-6 row">
+    <label for="especifique cual?" class="col-sm-2 col-form-label"></label>
+    <div class="col-sm-8">
+      <input type="text"  class="form-control">
     </div>
   </div>
-  
 
+    </div>
+  </div>
 
-  <div class="mb-6 row">
+  <br>
+
+<div class="mb-6 row">
       <p> <b>  &nbsp;&nbsp; 7.</b>¿Presenta alergia a algún medicamento?</p> 
     
     <div class="col-sm-4">
@@ -174,9 +175,7 @@ transplante de órganos o en medicamentos que inhiben el sistema inmunitario).</
     </div>
   </div>
 
-
-
-  <div class="mb-6 row">
+     <div class="mb-6 row">
       <p> <b>  &nbsp;&nbsp; 8.</b>¿Ya está Vacunado?</p> 
     <div class="col-sm-4">
  <v-container id="dropdown-example-3">
@@ -193,56 +192,63 @@ transplante de órganos o en medicamentos que inhiben el sistema inmunitario).</
     </div>
   </div>
 
-
-   <div class="mb-6 row">
+  <div class="mb-6 row">
      <p> <b>  &nbsp;&nbsp; 9.</b>¿Número de dosis aplicadas? </p>
-     <div class="col-sm-4">
- <v-container id="dropdown-example-3">
-    <v-overflow-btn
-      class="my-2" :items="dropdown_edit"
-     placeholder="Elige tu respuesta"
-      counter
-      item-value="text"
-    ></v-overflow-btn>
-  </v-container>
-  
+    <div class="col-sm-6">
+     <select class="form-control">
+       <option  value="" > -seleccione-</option>
+        
+
+        <option  value="cero" > 0 </option>
+
+         <option  value="una" > 1 </option>
+
+          <option  value="dos" > 2 </option>
+
+     </select>
     </div>
   </div>
 
-    
-   <div class="mb-6 row">
+<div class="mb-8 row">
      <p> <b>  &nbsp;&nbsp; 10.</b>¿Lugar de Vacunación correspondiente a su eps?</p>
-    <div class="col-sm-4">
- <v-container id="dropdown-example-3">
-    <v-overflow-btn
-      class="my-2"
-    :items="dropdown_edit"
-     
-      placeholder="Elige tu respuesta"
-      counter
-      item-value="text"
-    ></v-overflow-btn>
-  </v-container>
-  
+     <div class="col-sm-6">
+     <select class="form-control">
+       <option  value="" > -seleccione -</option>
+        
+
+        <option  value="cero" > Hospital General </option>
+         <option  value="una" > Clinica León XVIII </option>
+
+          <option  value="dos" > Clínica Medellín </option>
+
+     </select>
     </div>
   </div>
- </div center> 
+ 
 
-<div class="mb-6 row">
+
+
+
+  <div class="mb-6 row">
     <center>
-    <div class="col-md-4">
+    <div class="col-md-8">
       
-      <button class="btn btn-primary form-control " @click="iraformulario2()">Escoger día de la cita</button>
-    
+<button class="btn btn-primary form-control " @click="iradiacita()">Escoger día de la cita</button>
+
     </div>
     </center>
+</div>    
+
+        </v-form> 
+    </div>
   </div>
 
-  </v-form>
-</div>
-
-
 </template>
+
+
+
+
+
 
 <script>
 export default {
@@ -257,6 +263,12 @@ export default {
         ex7: 'red',
         ex8: 'primary',
       },
+
+    methods:{
+        iradiacita(){
+            this.$router.push('/diacita')
+        }
+  }
   
   }
 </script>
@@ -497,7 +509,7 @@ export default {
 #centro{ 
                           
   height: 3000px;
-  width:1000px;
+  width:1500px;
   margin: 0 auto;
   border-radius: 20px;
   border: 5px solid;
@@ -530,7 +542,7 @@ label:before {
   text-align: center;
   vertical-align: middle;
   width: 95 px;
-}
+} 
 
 .flex-container > div {
   background-color: #f1f1f1;
@@ -538,14 +550,15 @@ label:before {
   flex-direction: column;
   display: flex;
   height: 300px;
-  align-items: center;
   flex-direction: row;
   justify-content: center;
   padding: 50px;
   font-size: 20px;
-}
-/* .flex-container {
+} 
+ .flex-container {
   display: flex;
   justify-content: center;
-}  */
+} 
+
+
 </style>

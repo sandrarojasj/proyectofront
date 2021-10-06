@@ -4,13 +4,12 @@
    <div id="contenedor"> 
     <div id="centro"> 
         <estilo>
-         <i>
+         
            <br>
         <h4>
-        <p style= "color:LightGray;" size="px"> Información de las diferentes vacunas contra el COVID-19 <br><br>
- </p></h4> 
- </i>
-        <img src= "../imagenes/comparacion.png" width="600" height="1000">
+        <p style= "color:black;" size="px"> <h4> Aquí puede encontrar información, acerca de las diferentes Vacunas contra el COVID-19</h4> <br><br></p></h4> 
+
+        <img src= "../imagenes/comparacion.png" width="80%" height="80%">
 
       </estilo>
           
@@ -20,11 +19,38 @@
     <img id="vacunarse" src="../imagenes/yomevacuno.png" >
     <br>
   
-    <button class="boton">Agende su cita</button> 
+    <br>
+  <div class="mb-6 row">
+    <center>
+    <div class="col-md-8">
+      
+<button class="btn btn-primary form-control " @click="irapedircita()">Agende su cita</button>
+
+    </div>
+    </center>
+</div>    
     <br> 
    </div>
     </center>  
 </template>
+
+<script>
+
+export default {
+  name: 'Informacion',
+  
+  data (){
+  
+  },
+
+  methods:{
+        irapedircita(){
+         window.location.href="/pedircita"
+        }
+  }
+}
+
+</script>
 
 <style>
 
@@ -53,12 +79,12 @@
 }
 
 #centro{                           
-  height: 1150px;
-  width: 700px;
+  height: 1300px;
+  width: 800px;
   margin: 0 auto;
   border-radius: 20px;
   border: 5px solid;
-  background-color: rgb(000, 054, 061);
+  background-color: rgb(250, 251, 251);
   top: 30px;
   position: relative;
 } 
@@ -74,6 +100,7 @@
   size: 50px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+ 
 }
 
 
